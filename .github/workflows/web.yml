@@ -23,7 +23,7 @@ jobs:
         name: Install system dependencies
       - name: Get dependencies
         run: flutter pub get && flutter pub upgrade
-      - run: flutter build web --release
+      - run: flutter build web
         name: Build Pangolin for Web
       - name: Deploy to GitHub pages
         run: |
